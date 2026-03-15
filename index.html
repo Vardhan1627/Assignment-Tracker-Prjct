@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Assignment Tracker</title>
-    <link rel="stylesheet" href="style.css">
+<title>College Assignment Tracker</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <div class="container">
+<h1>College Assignment Tracker</h1>
 
-        <h1>Assignment Tracker</h1>
+<div class="form">
 
-        <div class="input-section">
-            <input type="text" id="title" placeholder="Assignment Title">
-            <input type="date" id="dueDate">
-            <button onclick="addAssignment()">Add</button>
-        </div>
+<input type="text" id="title" placeholder="Assignment Title">
 
-        <ul id="assignmentList"></ul>
+<input type="text" id="subject" placeholder="Subject">
 
-    </div>
+<input type="date" id="dueDate">
 
-<script src="script.js"></script>
+<select id="priority">
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+</select>
+
+<button onclick="addAssignment()">Add Assignment</button>
+
+</div>
+
+<input type="text" id="search" placeholder="Search assignments">
+
+<ul id="assignmentList"></ul>
+
+<script src="js/storage.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>
